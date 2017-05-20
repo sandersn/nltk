@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "target": "es6",
+        "module": "commonjs"
+    },
+    "files": [
+        "nltk/index.ts",
+        "nltk/corpus/index.ts"
+        "nltk/corpus/test.ts"
+    ]
+}

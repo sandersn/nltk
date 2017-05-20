@@ -1,0 +1,32 @@
+{
+  "name": "nltk",
+  "version": "1.0.0",
+  "description": "Port of NLTK from Python",
+  "main": "out/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "source-map-support": "^0.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-typescript": "^3.1.3",
+    "jasmine-core": "^2.4.1",
+    "typescript": "^2.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandersn/nltk.git"
+  },
+  "author": "Nathan Shively-Sanders",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sandersn/nltk/issues"
+  },
+  "homepage": "https://github.com/sandersn/nltk#readme"
+}

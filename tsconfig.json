@@ -8,7 +8,7 @@
     },
     "files": [
         "nltk/index.ts",
-        "nltk/corpus/index.ts"
+        "nltk/corpus/index.ts",
         "nltk/corpus/test.ts"
     ]
 }

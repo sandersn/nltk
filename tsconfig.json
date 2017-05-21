@@ -7,8 +7,14 @@
         "module": "commonjs"
     },
     "files": [
+        "nltk/data.ts",
         "nltk/index.ts",
         "nltk/corpus/index.ts",
-        "nltk/corpus/test.ts"
+        "nltk/corpus/test.ts",
+        "nltk/corpus/reader/api.ts",
+        "nltk/corpus/reader/util.ts",
+        "nltk/corpus/reader/index.ts",
+        "nltk/corpus/reader/plaintext.ts",
+        "nltk/corpus/reader/test.ts"
     ]
 }

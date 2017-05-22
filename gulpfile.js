@@ -9,5 +9,5 @@ gulp.task("default", function () {
         .js.pipe(gulp.dest("out"));
 });
 gulp.task("test", ["default"], function () {
-    return gulp.src("out/**/test.js").pipe(jasmine())
+    return gulp.src("out/**/test*.js").pipe(jasmine())
 });

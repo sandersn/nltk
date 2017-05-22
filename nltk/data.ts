@@ -35,5 +35,18 @@ export abstract class PathPointer {
     abstract join(fileid: FileId): PathPointer
 }
 
-class SeekableUnicodeStreamReader {
+export class SeekableUnicodeStreamReader {
+    // TODO: Not 100% or even 50% sure stream: Buffer
+    constructor(stream: Buffer, encoding: string) {
+    }
+    tell(): number {
+    }
+    // TODO: Needs to return Buffer | string, I think?
+    // TODO: number | undefined is just how the test uses it, might not be correct
+    read(n: number | undefined): string {
+    }
+    readline(n: number | undefined): string {
+    }
+    seek(pos: number | undefined): void {
+    }
 }

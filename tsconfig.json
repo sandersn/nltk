@@ -15,6 +15,8 @@
         "nltk/corpus/reader/util.ts",
         "nltk/corpus/reader/index.ts",
         "nltk/corpus/reader/plaintext.ts",
-        "nltk/corpus/reader/test.ts"
+        "nltk/corpus/reader/test.ts",
+        "nltk/test/unit/types.ts",
+        "nltk/test/unit/testSeekableUnicodeStreamReader.ts"
     ]
 }

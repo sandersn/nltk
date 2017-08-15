@@ -4,11 +4,15 @@
         "noImplicitThis": true,
         "strictNullChecks": true,
         "target": "es6",
+        "lib": ["es6", "dom"],
         "module": "commonjs"
     },
     "files": [
+        "nltk/collections.ts",
         "nltk/data.ts",
         "nltk/index.ts",
+        "nltk/internals.ts",
+        "nltk/types.ts",
         "nltk/corpus/index.ts",
         "nltk/corpus/test.ts",
         "nltk/corpus/reader/api.ts",

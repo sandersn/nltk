@@ -1,5 +1,6 @@
 import { Map } from './util'
 import { PathPointer } from '../../data'
+type Encoding = string
 /**
  * A base class for "corpus reader" classes, each of which can be
  * used to read a specific corpus format.  Each individual corpus
@@ -22,7 +23,7 @@ export class CorpusReader {
         // TODO: import { PathPointer and friends } from '../data'
         root: PathPointer | string,
         fileids: string[] | RegExp,
-        encoding: string | [RegExp, string][] | Map<string> | undefined = 'utf8',
+        encoding: Encoding | [RegExp, Encoding][] | Map<Encoding> | undefined = 'utf8',
         tagset?: string) {
     }
 }

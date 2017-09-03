@@ -1,6 +1,6 @@
 import { LazySequence, Slice } from './types'
 import { sliceBounds, ValueError, IndexError } from './internals'
-abstract class AbstractLazySequence<T> implements LazySequence<T> {
+export abstract class AbstractLazySequence<T> implements LazySequence<T> {
     abstract length: number
     abstract iterateFrom(start: number): Iterable<T>
     get(start: number, stop: number): LazySubsequence<T>
@@ -84,7 +84,7 @@ abstract class AbstractLazySequence<T> implements LazySequence<T> {
     // Note: no way to prevent usage as a Map key in javascript
 }
 
-class LazySubsequence<T> extends AbstractLazySequence<T> {
+export class LazySubsequence<T> extends AbstractLazySequence<T> {
     static minSize = 1000
     static create<T>(source: LazySequence<T>, slice: Slice): LazySubsequence<T> | T[] {
         const { start, stop } = slice
@@ -123,7 +123,7 @@ function islice<T>(source: Iterable<T>, start: number, stop?: number, step?: num
         }
     }
 }
-class LazyConcatenation<T> extends AbstractLazySequence<T> {
+export class LazyConcatenation<T> extends AbstractLazySequence<T> {
     offsets: number[]
     constructor(private list: Array<LazySequence<T>> | LazySequence<LazySequence<T>>) {
         super()
